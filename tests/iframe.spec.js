@@ -12,11 +12,11 @@ test('iframe practice', async({page})=>{
     await frame2.locator('//img[@src="images/high_tatras3_min.jpg"]').dragTo(frame2.locator('//div[@id="trash"]'));
     await page.waitForTimeout(5000);
 
-
-    // await page.goto('https://www.tutorialspoint.com/selenium/practice/frames.php');
-    // const frame3=await page.locator('//iframe[@src="new-tab-sample.php"][1]');
-    // await frame3.locator('//a[@href="https://www.tutorialspoint.com"]').click();
-    // await page.waitForTimeout(5000);
+ 
+     await page.goto('https://www.tutorialspoint.com/selenium/practice/frames.php');
+    const frame3=await page.locator('//iframe[@src="new-tab-sample.php"][1]');
+    await frame3.locator('//a[@href="https://www.tutorialspoint.com"]').click();
+    await page.waitForTimeout(5000);
 
 })
 
