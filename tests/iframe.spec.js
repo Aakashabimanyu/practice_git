@@ -9,8 +9,8 @@ test('iframe practice', async({page})=>{
 
     await page.locator('//div[@class="menu-interaction-container"]//a[@href="https://www.globalsqa.com/demo-site/draganddrop/"]').click();
     const frame2=await page.frameLocator('//iframe[@src="../../demoSite/practice/droppable/photo-manager.html"]');
-    await frame2.locator('//img[@src="images/high_tatras3_min.jpg"]').dragTo(frame2.locator('//div[@id="trash"]'));
-    await page.waitForTimeout(5000);
+    // await frame2.locator('//img[@src="images/high_tatras3_min.jpg"]').dragTo(frame2.locator('//div[@id="trash"]'));
+    // await page.waitForTimeout(5000);
 
  
    
