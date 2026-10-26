@@ -16,7 +16,7 @@ test('iframe practice', async({page})=>{
    await page.goto('https://www.tutorialspoint.com/selenium/practice/frames.php');
    const frame3=await page.locator('//iframe[@src="new-tab-sample.php"][1]');
    await frame3.locator('//a[@href="https://www.tutorialspoint.com"]').click();
-   await page.waitForTimeout(5000);
+//    await page.waitForTimeout(5000);
 
 
 
