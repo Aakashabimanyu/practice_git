@@ -1,0 +1,4 @@
+T-shirt count: 50
+T-shirt price count: 49
+Minimum T-shirt price: Rs. 192
+Product name: HRX by Hrithik Roshan
