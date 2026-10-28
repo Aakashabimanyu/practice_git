@@ -12,8 +12,8 @@ test('Find minimum T-shirt price and product', async ({ page }) => {
             '//li[@class="product-base"]//div[@class="product-price"]//span[@class="product-discountedPrice" or (not(@class) and text())]'
         ).allInnerTexts();
 
-        const prices = pricesText.map(text =>
-            Number(text.replace(/[^\d]/g, ''))
+        // const prices = pricesText.map(text =>
+        //     Number(text.replace(/[^\d]/g, ''))
         );
 
         const minimumPrice = Math.min(...prices);
